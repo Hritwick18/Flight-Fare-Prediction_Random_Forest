@@ -6,7 +6,7 @@ import pandas as pd
 import time
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('flight.pkl'))
+model = pickle.load(open('flight.pkl','rb'))
 
 def predict_price(Total_Stops, Jounary_day, Jounary_Month, Deep_hour, Deep_min,
        Arival_hour, Arival_min,Duration_hour, Duration_min,
